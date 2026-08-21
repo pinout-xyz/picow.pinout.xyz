@@ -15,7 +15,7 @@ if ("serviceWorker" in navigator) {
 <link rel="manifest" href="manifest.json">
 <title>Raspberry Pi Pico W GPIO Pinout</title>
 <meta name="description" content="An interactive, accessible and beautiful GPIO Pinout guide for the Raspberry Pi Pico W" />
-<link rel="stylesheet" href="pinout.css?v=20260821v2" type="text/css" media="screen,print" />
+<link rel="stylesheet" href="pinout.css?v=20260821v3" type="text/css" media="screen,print" />
 </head>
 <body>
     <header>
@@ -109,14 +109,14 @@ if ("serviceWorker" in navigator) {
             <tr><th>21</th><td class="gpio">GP16</td>                                <td class="spi" title="SPI 0: Host-receive">SPI0 RX</td>     <td class="i2c" title="I2C 0: Data">I2C0 SDA</td>             <td class="uart" title="UART 0: Transmit">UART0 TX</td>                  <td class="pwm advanced" title="PWM 0: Channel A">PWM0 A</td></tr>
             </tbody>
         </table>
-        <p class="custom share">
-            <button type="button" id="share" tabindex="0">Copy sharing link</button>
-            <button type="button" id="clear" tabindex="0">Clear labels</button>
-            <span id="share_count"></span>
-            <span id="share_status" role="status" aria-live="polite"></span>
-            <span id="share_notice"></span>
-        </p>
     </article>
+    <p class="custom share">
+        <button type="button" id="share" tabindex="0">Copy sharing link</button>
+        <button type="button" id="clear" tabindex="0">Clear labels</button>
+        <span id="share_count"></span>
+        <span id="share_status" role="status" aria-live="polite"></span>
+        <span id="share_notice"></span>
+    </p>
     <article class="extra advanced">
         <table aria-label="Additional pin definitions.">
             <thead>
@@ -167,7 +167,7 @@ if ("serviceWorker" in navigator) {
     <footer class="print">
         <p>picow.pinout.xyz - This interactive, accessible &amp; beautiful GPIO pinout and pin function guide for the Raspberry Pi Pico W is maintained by @gadgetoid</p>
     </footer>
-    <script src="pinout.js?v=20260821v3" type="text/javascript"></script>
+    <script src="pinout.js?v=20260821v4" type="text/javascript"></script>
 </body>
 </html>
 

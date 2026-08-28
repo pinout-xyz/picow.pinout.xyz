@@ -138,11 +138,13 @@ if ("serviceWorker" in navigator) {
             </tbody>
             <tbody>
                 <tr><td>GP23</td><td>Wireless Power On</td><td></td></tr>
-                <tr><td>GP24</td><td>Wireless SPI Data</td><td></td></tr>
-                <tr><td>GP25</td><td>Wireless SPI Chip-Select</td><td></td></tr>
+                <tr><td>GP24</td><td>Wireless SPI Data / IRQ</td><td></td></tr>
+                <tr><td>GP25</td><td>Wireless SPI Chip-Select</td><td>Enables the GP29 ADC when high</td></tr>
                 <tr><td>GP29 / A3</td><td>Wireless SPI Clock / VSYS Sense</td><td>Read VSYS/3 through resistor divider and FET Q1</td></tr>
                 <tr><td>A4</td><td>Temperature</td><td>Read onboard temperature sensor</td></tr>
-								<tr><td>TP1</td><td>Ground</td><td>close coupled ground for differential USB signals</td></tr>
+            </tbody>
+            <tbody class="tpads">
+                <tr><td>TP1</td><td>Ground</td><td>close coupled ground for differential USB signals</td></tr>
                 <tr><td>TP2</td><td>USB DM</td><td>USB Data Negative pin</td></tr>
                 <tr><td>TP3</td><td>USB DP</td><td>USB Data Positive pin</td></tr>
                 <tr><td>TP4</td><td>WL_GPIO1/SMPS PS Pin</td><td>marked do not use in datasheet</td></tr>
@@ -151,7 +153,7 @@ if ("serviceWorker" in navigator) {
             </tbody>
             <tbody class="wl_gpio">
                 <tr><td>WL_GPIO0</td><td>User LED</td><td></td></tr>
-                <tr><td>WL_GPIO1</td><td>RT6150B-33GQW Power-Select</td><td>LOW (default) for high efficiency (PFM)<br>HIGH for improved ripple (PWM)</td></tr>
+                <tr><td>WL_GPIO1</td><td>RT6154 Power-Select</td><td>LOW (default) for high efficiency (PFM)<br>HIGH for improved ripple (PWM)</td></tr>
                 <tr><td>WL_GPIO2</td><td>VBUS Sense</td><td>Detect USB or VBUS power</td></tr>
             </tbody>
         </table>
